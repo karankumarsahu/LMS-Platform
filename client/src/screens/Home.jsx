@@ -1,11 +1,19 @@
-import { Sidebar } from "lucide-react";
+import Header from "@/components/Header/Header";
+import Sidebar from "@/components/Sidebar/Sidebar";
 
 const Home = () => {
   return (
     <>
       <div className="w-full h-screen">
-        <div className="w-full h-full grid grid-cols-2">
+        <div className="w-full h-full grid grid-cols-6">
         <Sidebar />
+
+        <div className="w-full h-screen col-span-5">
+          <div>
+            <Header/>
+          </div>
+        </div>
+        
         </div>
       </div>
     </>

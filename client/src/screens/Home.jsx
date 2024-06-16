@@ -1,7 +1,11 @@
+import CategoryList from "@/components/CategoryList/CategoryList";
 import Header from "@/components/Header/Header";
 import Sidebar from "@/components/Sidebar/Sidebar";
 
 const Home = () => {
+  
+  
+  
   return (
     <>
       <div className="w-full h-screen">
@@ -11,6 +15,9 @@ const Home = () => {
         <div className="w-full h-screen col-span-5">
           <div>
             <Header/>
+            
+            <CategoryList />
+            
           </div>
         </div>
         

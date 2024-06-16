@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 const Home = lazy(() => import("./screens/Home"))
 const Dashboard = lazy(() => import("./screens/Dashboard"))
+const Category = lazy(() => import("./screens/Category"))
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
      <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/dashboard" element={<Dashboard/>} />
+      <Route path="/category/:id" element={<Category />} />
      </Routes>
      </BrowserRouter> 
      </Suspense>

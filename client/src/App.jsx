@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 const Home = lazy(() => import("./screens/Home"))
 const Dashboard = lazy(() => import("./screens/Dashboard"))
 const Category = lazy(() => import("./screens/Category"))
+const Profile = lazy(() => import ("./screens/Profile"))
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Route path="/" element={<Home/>} />
       <Route path="/dashboard" element={<Dashboard/>} />
       <Route path="/category/:id" element={<Category />} />
+      <Route path="/profile" element={<Profile />} />
      </Routes>
      </BrowserRouter> 
      </Suspense>

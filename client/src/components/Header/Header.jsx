@@ -1,27 +1,22 @@
-import { IoSearch } from "react-icons/io5";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import { useState } from "react";
-import { Button } from "../ui/button";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { useState } from "react";
+import { FaCompass, FaRegUser } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/io";
+import { IoSearch } from "react-icons/io5";
+import { MdDashboard } from "react-icons/md";
+import { Link, useLocation } from "react-router-dom";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { Button } from "../ui/button";
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
-  DrawerDescription,
   DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
+  DrawerTrigger
 } from "../ui/drawer";
-import { FaCompass } from "react-icons/fa";
-import { Link, useLocation } from "react-router-dom";
-import { MdDashboard } from "react-icons/md";
-import { FaRegUser } from "react-icons/fa";
 
 const Header = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(true);

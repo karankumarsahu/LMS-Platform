@@ -5,6 +5,7 @@ const Home = lazy(() => import("./screens/Home"))
 const Dashboard = lazy(() => import("./screens/Dashboard"))
 const Category = lazy(() => import("./screens/Category"))
 const Profile = lazy(() => import ("./screens/Profile"))
+const CourseDetails = lazy(() => import ("./screens/CourseDetails"))
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/dashboard" element={<Dashboard/>} />
       <Route path="/category/:id" element={<Category />} />
       <Route path="/profile" element={<Profile />} />
+      <Route path="/course_details/:id" element={<CourseDetails />} />
      </Routes>
      </BrowserRouter> 
      </Suspense>

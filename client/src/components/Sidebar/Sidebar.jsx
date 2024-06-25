@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaCompass } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
 import { Link, useLocation } from 'react-router-dom';
@@ -7,6 +6,9 @@ const Sidebar = () => {
 
   const {pathname} = useLocation()
   
+  const pathnames = [
+    "/", "/course_details"
+  ]
   
   return (
     <>
@@ -16,8 +18,8 @@ const Sidebar = () => {
 
         <div className='flex flex-col gap-4 cursor-pointer'>
           <Link to={"/"}>
-          <div className={`w-full h-14 flex items-center gap-3 px-8 ${pathname === "/" ? "bg-[#F2FBFF] border-r-4 border-[#11688F]" : ""}`}>
-            <FaCompass className={`w-5 h-5 ${pathname === "/" ? "fill-[#11688F]" : ""}`}/>
+          <div className={`w-full h-14 flex items-center gap-3 px-8 ${pathnames.includes(pathname) ? "bg-[#F2FBFF] border-r-4 border-[#11688F]" : ""}`}>
+            <FaCompass className={`w-5 h-5 ${pathnames.includes(pathname) ? "fill-[#11688F]" : ""}`}/>
             <h1 className='font-poppins font-medium '>Browse</h1>
           </div>
           </Link>
